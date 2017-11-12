@@ -1,8 +1,9 @@
+'use strict';
 //declaring projects array
 var projects = [];
 
 //Object Constructor to be filled with project data
-function Project(projectDataObj) {
+function Project (projectDataObj) {
   this.title = projectDataObj.title;
   this.finalizedOn = projectDataObj.finalizedOn;
   this.body = projectDataObj.body;
@@ -11,7 +12,7 @@ function Project(projectDataObj) {
 
 Project.prototype.toHtml = function () {
   //changing the class of the project from template and finding its parts
-  var $newProject = $('article.template').clone();
+  var $newProject = $('.template').clone();
   $newProject.removeClass('template');
   $newProject.find("h1").text(this.title);
   $newProject.find(".byline a").attr("href", this.projectUrl);
@@ -20,6 +21,7 @@ Project.prototype.toHtml = function () {
 
   //appending it to the html
   $newProject.append("<hr>")
+  return $newProject;
 }
 
 projectData.forEach(function(projectObject){
@@ -27,5 +29,5 @@ projectData.forEach(function(projectObject){
 });
 
 projects.forEach(function(project){
-  $('articles').append(project.toHtml());
+  $('#articles').append(project.toHtml());
 });

@@ -10,37 +10,49 @@
 <body>
   <header class="site-header">
     <section class="heading-group-h1">
-    Langston McClarron
-    <h1> Project Descriptions </h1>
-  Information about each project will be placed here and an overview of my work as a whole
-</section>
-  <nav class="main-nav">
-    <ul>
-      <li class="tab" data-content="home"> Home </li>
-      <li class="tab" data-content="projects"> Projects </li>
-      <li class="tab" data-content="about"> About </li>
-      <li><a href="https://github.com/LangstonMac" target="_blank"> Github </li>
-        <li><a href="https://www.linkedin.com/in/langston-mcclarron-67a00914b/" target="_blank"> LinkedIn </li>
+      <h1> Code By Lang </h1>
+    </section>
+    <nav class="main-nav">
+      <ul>
+        <li class="tab" data-content="articles"> Projects </li>
+        <li class="tab" data-content="about"> About </li>
+        <li><a href="https://github.com/LangstonMac" target="_blank"> GitHub </a></li>
+        <li><a href="https://www.linkedin.com/in/langston-mcclarron-67a00914b/" target="_blank"> LinkedIn </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="articles" class="tab-content">
+      <article class="template" data-category="data-project">
+        <header>
+          <h1>Title</h1>
+          <div class="byline">
+            <a href=""> View Here </a>
+            published <time>Publish Time</time>
+          </div>
+        </header>
+        <section class="article-body"></section>
+      </article>
+    </section>
+    <section id="about" class="tab-content">
+      <header>
+        Welcome to my Portfolio
+      </header>
+      <section>
+        <h1> My interests include: </h1>
+        <ul>
+          <li> Coding </li>
+          <li> Music </li>
+          <li> The Bright Future of Technology </li>
         </ul>
-      </nav>
-    </header>
-      <main>
-        <section id="articles">
-          <article class="template" data-category="data-project">
-            <header>
-              <h1>Title</h1>
-              <div class="byline">
-                <a href=""> View at </a>
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
-              </div>
-            </header>
-            <section class="article-body"></section>
-          </article>
-        </section>
-      </body>
-      <footer>
-        &copy; 2017 | Lang Studios | Happy Holidays!
-      </footer>
-      <script src="scripts/data.js"></script>
-      <script src="scripts/portfolio.js"></script>
-      </html>
+      </section>
+    </main>
+    <footer>
+      &copy; 2017 | Lang Studios | Happy Holidays!
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/portfolioview.js"></script>
+  </body>
+  </html>
